@@ -306,7 +306,7 @@ input[type=submit]:hover {
   line-height: 175%;
   color:#95C637;
   margin:2rem 5rem;
-}	
+} 
 .home-page-body p {
   font-size:1.25rem;
 }
@@ -382,7 +382,7 @@ input[type=submit]:hover {
     height:225px;
   }
 }
-.flexbox {		
+.flexbox {    
   display:flex;
   flex-wrap:wrap;
   /*  overflow: hidden;*/
@@ -898,14 +898,8 @@ p.copyright {
 
 
 .sponsors {
-  /*padding-bottom:2rem;*/
-  flex-wrap:wrap;
    -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
+   box-orient:horizontal;
   display: flex;
    -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -915,25 +909,18 @@ p.copyright {
   -webkit-align-content:center;
 }
 .sponsor-container {
-  /*display:inline-block;*/
- /* margin:0 auto;
-    display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  flex-wrap:wrap;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-
-  align-items: center;*/
-
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  align-items:center;
+  margin-bottom:1rem;
 }
-
 .sponsor img,
 .sponsor-container img {
   width:80%;
   height: auto;
-  
+  flex-shrink: 0;
 }
 .sponsor {
   /*height:7rem;*/
@@ -964,10 +951,10 @@ p.copyright {
 .sponsor-container.tier-2 p {
   font-size: 1.75rem;
   font-weight:bold;
-}	
+} 
 .sponsor-container.tier-3 {
   width:100%;
-}	
+} 
 .sponsor-container.tier-3 p {
   font-size: 1rem;
   font-weight:bold;
@@ -1037,10 +1024,10 @@ padding-right:2rem;
 .sponsor-container.tier-2 p {
 font-size: 1.25rem;
 font-weight:normal;
-}	
+} 
 .sponsor-container.tier-3 {
 width:100%;
-}	
+} 
 .sponsor-container.tier-3 p {
 font-size: 1rem;
 font-weight:normal;
@@ -1217,7 +1204,7 @@ a{color:#95C637;}
     display: block;
     margin: 0 0 1rem;
     text-align: left;
-  }	
+  } 
   .main_nav_container nav .site_links li ul li a {
     background: rgba(255,255,255,0)!important;
   }
@@ -1227,7 +1214,7 @@ a{color:#95C637;}
   }
   .main_nav_container nav .site_links li ul {
     display:none;
-  }	
+  } 
   .main_nav_container nav .feature_links,
   .main_nav_container nav .social_links {
     display:block;
@@ -1295,7 +1282,7 @@ a{color:#95C637;}
   }
   .form_group {
     text-align:left;
-  }	
+  } 
   .input_container {
     display: block;
     margin: 0 0 1rem;
@@ -1330,7 +1317,7 @@ a{color:#95C637;}
   }
   .main_nav_container nav .social_links li:last-child {
     margin-right:0rem;
-  }	
+  } 
   .quote {
     font-size:.875rem;
   }
@@ -1368,7 +1355,7 @@ a{color:#95C637;}
   }
   .hide-for-small-only.br {
     display:none;
-  }	
+  } 
   .hero_image_successpage {
     background: url("/Koch-YEDevSite2/media/YE/heros/header-success-stories.jpg") 45% 100% no-repeat;
     background-size:225%;
@@ -1392,7 +1379,7 @@ a{color:#95C637;}
   }
   #p_lt_WebPartZone2_Page_pageplaceholder_p_lt_WebPartZone1_Modules_YE_Testimonial_TstModule1 .testimonial_content.pattern_dk {
     padding: 1.5rem 2rem 1.5rem 2rem;
-  }	
+  } 
   .nav-down .main_nav_container nav .site_links li ul li a {
     background:none;
   }
@@ -1477,7 +1464,7 @@ a{color:#95C637;}
     display:block;
   }
   .testimonial_mod .testimonial_content {
-    padding:1rem 1rem;	
+    padding:1rem 1rem;  
   }
   .event_details {
     width:100% !important;
